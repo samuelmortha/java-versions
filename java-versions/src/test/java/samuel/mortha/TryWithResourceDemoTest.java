@@ -14,10 +14,10 @@ public class TryWithResourceDemoTest {
     }
     @Test
     public void trytWithResourcePathTest() throws IOException{
-        Assert.assertEquals("123",t.tryWithResource("/home/ec2-user/environment/work/java/java-versions/java-versions/src/test/resources/simple.txt"));
+        Assert.assertEquals("123",t.tryWithResource("/home/ec2-user/environment/work/github/java-versions/java-versions/src/test/resources/simple.txt"));
     }
     @Test
     public void trytWithResourcePathFailTest() throws IOException{
-        Assert.assertNotEquals("1234",t.tryWithResource("/home/ec2-user/environment/work/java/java-versions/java-versions/src/test/resources/simple.txt"));
+        Assert.assertNotEquals("1234",t.tryWithResource("/home/ec2-user/environment/work/github/java-versions/java-versions/src/test/resources/simple.txt"));
     }
 }

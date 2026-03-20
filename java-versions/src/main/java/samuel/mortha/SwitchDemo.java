@@ -2,6 +2,12 @@ package samuel.mortha;
 
 public class SwitchDemo {
     
+    public static void main(String[] args){
+        System.out.println("Init SwitchDemo");
+        SwitchDemo sd = new SwitchDemo();
+        System.out.println(sd.getPartOfDay("morning"));
+    }
+    
     public String getDayOfWeek(int dayOfWeek){
         String result = "";
         switch(dayOfWeek){
@@ -26,6 +32,8 @@ public class SwitchDemo {
         }
         return result;
     }
+    /*
+    Commenting the below code as switch supports only int upto Java 7
     public Person getManager(Person p){
         Person result = null;
         Person a = new Person("a",1L);
@@ -43,6 +51,8 @@ public class SwitchDemo {
                 result = c;
         }
     }
+    */
+
     public String getPartOfDay(String partOfDay){
         String result = "";
         switch(partOfDay){
